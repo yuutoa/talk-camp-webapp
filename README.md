@@ -35,6 +35,11 @@ Below are some preview images showcasing the TalkCamp Web App:
 python -m venv venv
 venv\Scripts\activate  # On MacOS or Linux use: source venv/bin/activate
 ```
+Alternatively, you can use Poetry to create and activate the environment:  
+   ```bash
+   poetry install
+   poetry shell
+   ```
 
 3. **Install Dependencies:**  
 ```bash
