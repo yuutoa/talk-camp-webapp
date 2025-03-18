@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <title>TalkCamp - Your Place to Talk & Learn!</title>
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% block content %}
+
+
+    {% endblock %}
+    {% block author %}
+      <div style="display: flex; justify-content: center; padding: 15px; background-color: #3f4156; border-top: 1px solid #333;">
+        <p style="font-family: Arial, sans-serif; font-size: 14px; color: #aaa; margin: 0;">
+          &#169; 2025 Find me on GitHub: <a href="https://github.com/yuutoa" target="_blank" style="color: #71c6dd; text-decoration: no-underline;">Yuuto Akihiro</a>
+        </p>
+      </div>
+
+    {% endblock %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

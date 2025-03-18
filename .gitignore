@@ -1,0 +1,33 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Django
+*.log
+db.sqlite3
+*.pot
+*.pyc
+__pycache__/
+media/
+staticfiles/
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Migrations
+*/migrations/
